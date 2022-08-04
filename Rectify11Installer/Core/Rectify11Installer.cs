@@ -250,6 +250,11 @@ namespace Rectify11Installer
                 }
                 basee.Close();
 
+                if (Environment.OSVersion.Version.Build > 19999)
+                {
+                    await Task.Run(() => PatcherHelper.RunAsyncCommands("reg.exe", "import " + tempfldr + @"\files\rbicons.reg", @"C:\Windows\System32"));
+                    File.Copy(tempfldr + @"\files\unrbicons.reg", tempfldr + @"\unrbicons.reg", true);
+                }
                 if (options.ShouldInstallASDF)
                 {
                     File.Copy(tempfldr + @"\files\AccentColorizer.exe", @"C:\Windows\AccentColorizer.exe", true);
@@ -337,6 +342,11 @@ namespace Rectify11Installer
                 if (File.Exists(@"C:\Windows\AccentColorizer.exe"))
                 {
                     File.Delete(@"C:\Windows\AccentColorizer.exe");
+                }
+
+                if (File.Exists(@"C:\Windows\Rectify11\unrbicons.reg"))
+                {
+                    Task.Run(() => PatcherHelper.RunAsyncCommands("reg.exe", "import " + @"C:\Windows\Rectify11\unrbicons.reg", @"C:\Windows\System32"));
                 }
 
                 if (options.RemoveThemesAndThemeTool)

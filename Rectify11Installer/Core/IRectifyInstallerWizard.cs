@@ -145,6 +145,7 @@ namespace Rectify11Installer
         public bool w11 { get; }
         public bool w10TaskB { get; }
         public bool micaExplorer { get; }
+        public bool ribbon { get; }
     }
     public class InstallerEPOptions : IRectifyInstalllerEPOptions
     {
@@ -152,6 +153,7 @@ namespace Rectify11Installer
         public bool w11 { get; set; }
         public bool w10TaskB { get; set; }
         public bool micaExplorer { get; set; }
+        public bool ribbon { get; set; }
     }
 
     public interface IRectifyInstalllerUninstallOptions

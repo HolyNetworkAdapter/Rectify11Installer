@@ -38,6 +38,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.darkAwareCheckBox1 = new Rectify11Installer.Controls.DarkAwareCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -96,8 +97,6 @@
             // chkMicaExplorer
             // 
             this.chkMicaExplorer.AutoSize = true;
-            this.chkMicaExplorer.Checked = true;
-            this.chkMicaExplorer.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkMicaExplorer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkMicaExplorer.ForeColor = System.Drawing.Color.White;
             this.chkMicaExplorer.Location = new System.Drawing.Point(312, 245);
@@ -106,6 +105,7 @@
             this.chkMicaExplorer.TabIndex = 4;
             this.chkMicaExplorer.Text = "Extend Mica to explorer navigation bar";
             this.chkMicaExplorer.UseVisualStyleBackColor = true;
+            this.chkMicaExplorer.CheckedChanged += new System.EventHandler(this.chkMicaExplorer_CheckedChanged);
             // 
             // chkW10TaskB
             // 
@@ -166,10 +166,24 @@
             this.label2.TabIndex = 19;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // darkAwareCheckBox1
+            // 
+            this.darkAwareCheckBox1.AutoSize = true;
+            this.darkAwareCheckBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.darkAwareCheckBox1.ForeColor = System.Drawing.Color.White;
+            this.darkAwareCheckBox1.Location = new System.Drawing.Point(312, 219);
+            this.darkAwareCheckBox1.Name = "darkAwareCheckBox1";
+            this.darkAwareCheckBox1.Size = new System.Drawing.Size(171, 21);
+            this.darkAwareCheckBox1.TabIndex = 20;
+            this.darkAwareCheckBox1.Text = "Use Enhanced RibbonUI ";
+            this.darkAwareCheckBox1.UseVisualStyleBackColor = true;
+            this.darkAwareCheckBox1.CheckedChanged += new System.EventHandler(this.darkAwareCheckBox1_CheckedChanged);
+            // 
             // EPPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.darkAwareCheckBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chkW10TaskB);
             this.Controls.Add(this.label3);
@@ -203,5 +217,6 @@
         private PictureBox pictureBox3;
         private Label label3;
         private Label label2;
+        private Controls.DarkAwareCheckBox darkAwareCheckBox1;
     }
 }

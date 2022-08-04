@@ -91,7 +91,6 @@
 			<Command action="addskip" resource="CryptUI_Icons.res" mask="ICONGROUP,"></Command>
 		</Commands>
 	</Patch>
-
 	<Patch Package="microsoft-windows-cryptuiwizard-dll" HardlinkTarget="C:\Windows\SystemResources\cryptuiwizard.dll.mun" DisableOnSafeMode="false" Arch="amd64">
 		<Commands>
 			<Command action="delete" mask="ICONGROUP,"></Command>
@@ -212,6 +211,8 @@
 
 	<Patch Package="microsoft-windows-explorerframe" HardlinkTarget="C:\Windows\SystemResources\explorerframe.dll.mun" DisableOnSafeMode="false" Arch="amd64">
 		<Commands>
+			<Command action="delete" mask="IMAGE,"></Command>
+			<Command action="addskip" resource="explfram_image.res" mask="IMAGE,"></Command>
 			<Command action="delete" mask="ICONGROUP,"></Command>
 			<Command action="addskip" resource="ExplorerFrame_Icons.res" mask="ICONGROUP,"></Command>
 		</Commands>
@@ -1649,6 +1650,12 @@
 		<Commands>
 			<Command action="delete" mask="ICONGROUP, "></Command>
 			<Command action="addskip" resource="MultiDigiMon.exe.res" mask="ICONGROUP, "></Command>
+		</Commands>
+	</Patch>
+	<Patch Package="microsoft-windows-uiribbon" HardlinkTarget="C:\Windows\System32\uiribbon.dll" DisableOnSafeMode="false" Arch="amd64">
+		<Commands>
+			<Command action="delete" mask="PNG,"></Command>
+			<Command action="addskip" resource="uiribbon_png.res" mask="PNG,"></Command>
 		</Commands>
 	</Patch>
 	<Patch Package="microsoft-windows-tabletpc-controlpanel" HardlinkTarget="C:\Windows\System32\tabcal.exe" DisableOnSafeMode="false" Arch="amd64">

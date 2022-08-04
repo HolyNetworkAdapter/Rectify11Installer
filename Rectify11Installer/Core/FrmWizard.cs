@@ -770,6 +770,19 @@ namespace Rectify11Installer
                             if (epOptions.micaExplorer)
                                 await Task.Run(() => PatcherHelper.RunAsyncCommands("reg.exe", "import " + tempfldr + @"\files\ep\micaexpl.reg", tempfldr));
                             File.Copy(tempfldr + @"\files\ep\w11start.reg", tempfldr + @"\restore.reg", true);
+                            if (epOptions.ribbon)
+                            {
+                                await Task.Run(() => PatcherHelper.RunAsyncCommands("reg.exe", "add " + @"HKCU\Software\Classes\CLSID\{d93ed569-3b3e-4bff-8355-3c44f6a52bb5}\InprocServer32" + " /f /ve", @"C:\Windows\System32"));
+                                await Task.Run(() => PatcherHelper.RunAsyncCommands("reg.exe", "import " + tempfldr + @"\files\ribbon.reg", tempfldr));
+                            }
+                            if (Environment.OSVersion.Version.Build > 19999)
+                            {
+                                if (File.Exists(tempfldr + @"\files\rbres.dll"))
+                                {
+                                    File.Copy(tempfldr + @"\files\rbres.dll", @"C:\Windows\System32\rbres.dll", true);
+                                }
+                            }
+
                         }
                     }
                     TaskDialogPage pg;
