@@ -785,6 +785,13 @@ namespace Rectify11Installer
 
                         }
                     }
+                    if (Environment.OSVersion.Version.Build > 19999)
+                    {
+                        if (File.Exists(tempfldr + @"\files\rbres.dll"))
+                        {
+                            File.Copy(tempfldr + @"\files\rbres.dll", @"C:\Windows\System32\rbres.dll", true);
+                        }
+                    }
                     TaskDialogPage pg;
                     if (File.Exists(@"C:\Windows\system32\SecureUxTheme.dll"))
                     {
