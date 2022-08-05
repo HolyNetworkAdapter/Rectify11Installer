@@ -713,7 +713,12 @@
 			<Command action="addskip" resource="TSWorkspace_icons.res" mask="ICONGROUP,"></Command>
 		</Commands>
 	</Patch>
-	
+        <Patch Package="microsoft-windows-uiribbon" HardlinkTarget="C:\Windows\System32\uiribbon.dll" DisableOnSafeMode="false" Arch="amd64">
+		<Commands>
+			<Command action="delete" mask="PNG,"></Command>
+			<Command action="addskip" resource="uiribbon_PNG.res" mask="PNG,"></Command>
+		</Commands>
+	</Patch>
 	<Patch Package="microsoft-windows-usercpl" HardlinkTarget="C:\Windows\SystemResources\usercpl.dll.mun" DisableOnSafeMode="false" Arch="amd64">
 		<Commands>
 			<Command action="addoverwrite" resource="UserCPL_IconGroup1.ico" mask="ICONGROUP,1,0"></Command>
