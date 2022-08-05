@@ -50,7 +50,7 @@
             this.pictureBox1.BackgroundImage = global::Rectify11Installer.Properties.Resources.themepage;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 76);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 202);
             this.pictureBox1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(384, 11);
+            this.label1.Location = new System.Drawing.Point(384, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 23);
             this.label1.TabIndex = 1;

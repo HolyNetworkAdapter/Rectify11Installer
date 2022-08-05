@@ -194,7 +194,7 @@ namespace Rectify11Installer.Pages
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Rectify11Installer.Properties.Resources.uninst;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 72);
+            this.pictureBox3.Location = new System.Drawing.Point(46, 80);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(220, 223);
             this.pictureBox3.TabIndex = 23;

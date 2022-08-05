@@ -48,7 +48,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Rectify11Installer.Properties.Resources.epbg;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(11, -6);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(289, 367);
             this.pictureBox1.TabIndex = 0;
