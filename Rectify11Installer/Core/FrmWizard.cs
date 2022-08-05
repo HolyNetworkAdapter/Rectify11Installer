@@ -939,5 +939,10 @@ namespace Rectify11Installer
         {
 
         }
+
+        private void FrmWizard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
