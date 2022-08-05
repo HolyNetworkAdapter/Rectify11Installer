@@ -151,11 +151,9 @@ namespace Rectify11Installer
                     File.Copy(@"C:\Windows\System32\uxinit.dll", tempfldr + @"\files\WinReMount\Windows\System32\uxinit.dll", true);
                     File.Copy(@"C:\Windows\System32\bootux.dll", tempfldr + @"\files\WinReMount\Windows\System32\bootux.dll", true);
                     File.Copy(@"C:\Windows\System32\rstrui.exe", tempfldr + @"\files\WinReMount\Windows\System32\rstrui.exe", true);
-                    File.Copy(tempfldr + @"\files\winpeshl.exe", tempfldr + @"\files\WinReMount\Windows\System32\winpeshl.exe", true);
                     File.Copy(@"C:\Windows\System32\themeui.dll", tempfldr + @"\files\WinReMount\Windows\System32\themeui.dll", true);
                     File.Copy(@"C:\Windows\System32\uxtheme.dll", tempfldr + @"\files\WinReMount\Windows\System32\uxtheme.dll", true);
                     File.Copy(tempfldr + @"\files\notepad.exe.mui", tempfldr + @"\files\WinReMount\Windows\en-us\notepad.exe.mui", true);
-                    File.Copy(tempfldr + @"\files\winpeshl.exe.mui", tempfldr + @"\files\WinReMount\Windows\System32\en-us\winpeshl.exe.mui", true);
                     File.Copy(@"C:\Windows\System32\en-us\bootux.dll.mui", tempfldr + @"\files\WinReMount\Windows\System32\en-us\bootux.dll.mui", true);
                     File.Copy(@"C:\Windows\Resources\themes\rectify11\aero.msstyles", tempfldr + @"\files\WinreMount\Windows\Resources\themes\aero\aero.msstyles", true);
 
