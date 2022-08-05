@@ -748,9 +748,8 @@ namespace Rectify11Installer
                         }
                     }
                     await Task.Run(() => PatcherHelper.RunAsyncCommands("reg.exe", "import " + tempfldr + @"\files\FIX.reg", tempfldr));
-                    await Task.Run(() => PatcherHelper.RunAsyncCommands("rundll32.exe", "setupapi,InstallHinfSection DefaultInstall 132 " + tempfldr + @"\files\cursors\install.inf", tempfldr));
-                    await Task.Run(() => PatcherHelper.RunAsyncCommands("rundll32.exe", "setupapi,InstallHinfSection DefaultInstall 132 " + tempfldr + @"\files\cursors\linstall.inf", tempfldr));
-                    await Task.Run(() => PatcherHelper.RunAsyncCommands("rundll32.exe", "setupapi,InstallHinfSection DefaultInstall 132 " + tempfldr + @"\files\cursors\xlinstall.inf", tempfldr));
+                    await Task.Run(() => PatcherHelper.RunAsyncCommands("rundll32.exe", "setupapi,InstallHinfSection DefaultInstall 132 " + tempfldr + @"\files\cursors\light\install.inf", tempfldr));
+                    await Task.Run(() => PatcherHelper.RunAsyncCommands("rundll32.exe", "setupapi,InstallHinfSection DefaultInstall 132 " + tempfldr + @"\files\cursors\dark\install.inf", tempfldr));
                     if (options.ShouldInstallExplorerPatcher)
                     {
                         if (!Directory.Exists(@"C:\Program Files\StartAllBack") || !Directory.Exists(@"C:\Program Files\StartIsBack"))
@@ -877,6 +876,14 @@ namespace Rectify11Installer
                     }
                     if (options.RemoveThemesAndThemeTool)
                     {
+                        if (Directory.Exists(@"C:\Windows\Cursors\WindowsRectified"))
+                        {
+                            Directory.Delete(@"C:\Windows\Cursors\WindowsRectified", true);
+                        }
+                        if (Directory.Exists(@"C:\Windows\Cursors\WindowsRectifiedDark"))
+                        {
+                            Directory.Delete(@"C:\Windows\Cursors\WindowsRectifiedDark", true);
+                        }
                         if (File.Exists(@"C:\Program Files (x86)\UltraUXThemePatcher\uninstall.exe"))
                         {
                             var process = Process.Start(@"C:\Program Files (x86)\UltraUXThemePatcher\uninstall.exe");

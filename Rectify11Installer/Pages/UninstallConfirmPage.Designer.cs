@@ -98,11 +98,11 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::Rectify11Installer.Properties.Resources.uninst;
+            this.pictureBox2.BackgroundImage = global::Rectify11Installer.Properties.Resources._20220805_171514;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 41);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(227, 237);
+            this.pictureBox2.Size = new System.Drawing.Size(273, 274);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             // 

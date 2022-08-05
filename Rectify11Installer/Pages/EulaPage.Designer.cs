@@ -39,7 +39,7 @@ namespace Rectify11Installer.Pages
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Rectify11Installer.Properties.Resources.eula;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 86);
+            this.pictureBox1.Location = new System.Drawing.Point(58, 80);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(192, 192);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

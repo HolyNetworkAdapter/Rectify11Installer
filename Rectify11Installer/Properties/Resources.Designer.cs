@@ -91,12 +91,32 @@ namespace Rectify11Installer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20220805_171514 {
+            get {
+                object obj = ResourceManager.GetObject("20220805_171514", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] _7za_exe {
             get {
                 object obj = ResourceManager.GetObject("7za.exe", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap actualuninst {
+            get {
+                object obj = ResourceManager.GetObject("actualuninst", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

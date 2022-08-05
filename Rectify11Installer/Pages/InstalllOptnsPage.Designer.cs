@@ -30,7 +30,6 @@ namespace Rectify11Installer.Pages
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContent = new Rectify11Installer.Controls.DarkAwareFlowLayoutPanel();
             this.chkExplorerPatcher = new Rectify11Installer.Controls.DarkAwareCheckBox();
             this.chkWallpaper = new Rectify11Installer.Controls.DarkAwareCheckBox();
@@ -42,21 +41,11 @@ namespace Rectify11Installer.Pages
             this.lblFullDesc = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Rectify11Installer.Properties.Resources.sideimage;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(54, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 189);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // pnlContent
             // 
@@ -200,6 +189,17 @@ namespace Rectify11Installer.Pages
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Rectify11Installer.Properties.Resources.uninst;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(32, 72);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(220, 223);
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
             // InstalllOptnsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -207,25 +207,24 @@ namespace Rectify11Installer.Pages
             this.Controls.Add(this.lblSafeDesc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radSafe);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radFull);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.lblFullDesc);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.Name = "InstalllOptnsPage";
             this.Size = new System.Drawing.Size(640, 436);
             this.WizardTopText = "Choose what to install";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlContent.ResumeLayout(false);
             this.pnlContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private PictureBox pictureBox1;
         private DarkAwareFlowLayoutPanel pnlContent;
         private DarkAwareRadioButton radSafe;
         private Label lblSafeDesc;
@@ -237,5 +236,6 @@ namespace Rectify11Installer.Pages
         private Label label2;
         private DarkAwareCheckBox chkAsdf;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
