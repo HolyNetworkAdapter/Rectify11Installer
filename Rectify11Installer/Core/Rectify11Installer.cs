@@ -324,7 +324,7 @@ namespace Rectify11Installer
                     }
                 }
 
-                if (options.revertwinver)
+                if (options.Revertwinver)
                 {
                     if (File.Exists(@"C:\Windows\System32\winver.exe"))
                     {
@@ -338,7 +338,7 @@ namespace Rectify11Installer
                     }
                 }
 
-                if (options.deleteMFE)
+                if (options.DeleteMFE)
                 {
                     if (Directory.Exists(@"C:\Windows\MicaForEveryone"))
                     {
@@ -346,7 +346,7 @@ namespace Rectify11Installer
                     }
                 }
 
-                if (options.deleteASDF)
+                if (options.DeleteASDF)
                 {
                     if (File.Exists(@"C:\Windows\AccentColorizer.exe"))
                     {

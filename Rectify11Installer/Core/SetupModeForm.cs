@@ -85,6 +85,9 @@ namespace Rectify11Installer.Core
                         RemoveExplorerPatcher = ini.Read("DoSafeInstall") == bool.TrueString,
                         RemoveThemesAndThemeTool = ini.Read("RemoveThemes") == bool.TrueString,
                         RestoreWallpapers = ini.Read("RemoveWP") == bool.TrueString,
+                        Revertwinver = ini.Read("RemoveWINVER") == bool.TrueString,
+                        DeleteMFE = ini.Read("RemoveMFE") == bool.TrueString,
+                        DeleteASDF = ini.Read("RemoveASDF") == bool.TrueString,
                     };
 
                     IRectifyInstaller installer = new RectifyInstaller();

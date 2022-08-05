@@ -818,9 +818,9 @@ namespace Rectify11Installer
                         f.Write("RemoveEP", options.RemoveExplorerPatcher.ToString());
                         f.Write("RemoveThemes", options.RemoveThemesAndThemeTool.ToString());
                         f.Write("RemoveWP", options.RestoreWallpapers.ToString());
-                        f.Write("RemoveASDF", options.deleteASDF.ToString());
-                        f.Write("RemoveMFE", options.deleteMFE.ToString());
-                        f.Write("RemoveWINVER", options.revertwinver.ToString());
+                        f.Write("RemoveASDF", options.DeleteASDF.ToString());
+                        f.Write("RemoveMFE", options.DeleteMFE.ToString());
+                        f.Write("RemoveWINVER", options.Revertwinver.ToString());
                         f.Write("Mode", "Uninstall");
                     }
                     catch (Exception ex)
@@ -863,7 +863,7 @@ namespace Rectify11Installer
                             File.Delete(@"C:\Windows\Rectify11\restore.reg");
                         }
                     }
-                    if (options.deleteMFE)
+                    if (options.DeleteMFE)
                     {
                         var localap = Environment.GetEnvironmentVariable("localappdata");
                         if (localap != null)

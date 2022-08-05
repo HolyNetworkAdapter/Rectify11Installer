@@ -173,6 +173,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "UninstallConfirmPage";
             this.WizardTopText = "Uninstall Rectify11";
+            this.Load += new System.EventHandler(this.UninstallConfirmPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

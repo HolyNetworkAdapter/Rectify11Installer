@@ -161,9 +161,9 @@ namespace Rectify11Installer
         public bool RemoveExplorerPatcher { get; }
         public bool RemoveThemesAndThemeTool { get; }
         public bool RestoreWallpapers { get; }
-        public bool deleteASDF { get; }
-        public bool deleteMFE { get; }
-        public bool revertwinver { get; }
+        public bool DeleteASDF { get; }
+        public bool DeleteMFE { get; }
+        public bool Revertwinver { get; }
     }
     public class UninstallerOptions : IRectifyInstalllerUninstallOptions
     {
@@ -172,8 +172,8 @@ namespace Rectify11Installer
         public bool RemoveThemesAndThemeTool { get; set; }
 
         public bool RestoreWallpapers { get; set; }
-        public bool deleteASDF { get; set; }
-        public bool deleteMFE { get; set; }
-        public bool revertwinver { get; set; }
+        public bool DeleteASDF { get; set; }
+        public bool DeleteMFE { get; set; }
+        public bool Revertwinver { get; set; }
     }
 }
