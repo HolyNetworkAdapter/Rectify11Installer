@@ -143,14 +143,29 @@ namespace Rectify11Installer
                     Wizard.SetProgressText("Patching WinRE files");
 
                     //copying/patching important files only, no need for entire winre
-                    File.Copy(@"C:\Windows\regedit.exe", tempfldr + @"\files\WinReMount\Windows\regedit.exe", true);
-                    File.Copy(tempfldr + @"\files\rectify11_wallpapers\img0.jpg", tempfldr + @"\files\WinReMount\Windows\System32\winre.jpg", true);
-                    File.Copy(tempfldr + @"\files\rectify11_wallpapers\img0.jpg", tempfldr + @"\files\WinReMount\Windows\System32\winpe.jpg", true);
-                    File.Copy(@"C:\Windows\System32\cmd.exe", tempfldr + @"\files\WinReMount\Windows\System32\cmd.exe", true);
+                    if (File.Exists(@"C:\Windows\regedit.exe"))
+                    {
+                        File.Copy(@"C:\Windows\regedit.exe", tempfldr + @"\files\WinReMount\Windows\regedit.exe", true);
+                    }
+                    if (File.Exists(tempfldr + @"\files\rectify11_wallpapers\img0.jpg"))
+                    {
+                        File.Copy(tempfldr + @"\files\rectify11_wallpapers\img0.jpg", tempfldr + @"\files\WinReMount\Windows\System32\winre.jpg", true);
+                    }
+                    if (File.Exists(tempfldr + @"\files\rectify11_wallpapers\img0.jpg"))
+                    {
+                        File.Copy(tempfldr + @"\files\rectify11_wallpapers\img0.jpg", tempfldr + @"\files\WinReMount\Windows\System32\winpe.jpg", true);
+                    }
+                    if (File.Exists(@"C:\Windows\System32\cmd.exe"))
+                    {
+                        File.Copy(@"C:\Windows\System32\cmd.exe", tempfldr + @"\files\WinReMount\Windows\System32\cmd.exe", true);
+                    }
                     File.Copy(tempfldr + @"\files\notepad.exe", tempfldr + @"\files\WinReMount\Windows\notepad.exe", true);
                     File.Copy(@"C:\Windows\System32\uxinit.dll", tempfldr + @"\files\WinReMount\Windows\System32\uxinit.dll", true);
                     File.Copy(@"C:\Windows\System32\bootux.dll", tempfldr + @"\files\WinReMount\Windows\System32\bootux.dll", true);
-                    File.Copy(@"C:\Windows\System32\rstrui.exe", tempfldr + @"\files\WinReMount\Windows\System32\rstrui.exe", true);
+                    if (File.Exists(@"C:\Windows\System32\rstrui.exe"))
+                    {
+                        File.Copy(@"C:\Windows\System32\rstrui.exe", tempfldr + @"\files\WinReMount\Windows\System32\rstrui.exe", true);
+                    }
                     File.Copy(@"C:\Windows\System32\themeui.dll", tempfldr + @"\files\WinReMount\Windows\System32\themeui.dll", true);
                     File.Copy(@"C:\Windows\System32\uxtheme.dll", tempfldr + @"\files\WinReMount\Windows\System32\uxtheme.dll", true);
                     File.Copy(tempfldr + @"\files\notepad.exe.mui", tempfldr + @"\files\WinReMount\Windows\en-us\notepad.exe.mui", true);
@@ -176,7 +191,10 @@ namespace Rectify11Installer
                     Wizard.SetProgressText("Setting WinRE path");
 
                     //This is to make sure that our changes are actually saved in WinRE.
-                    Directory.Delete(@"C:\Recovery", true);
+                    if (Directory.Exists(@"C:\Recovery"))
+                    {
+                        Directory.Delete(@"C:\Recovery", true);
+                    }
                     await Task.Run(() => PatcherHelper.RunAsyncCommands("reagentc.exe", "/disable", @"C:\Windows\System32"));
                     await Task.Run(() => PatcherHelper.RunAsyncCommands("reagentc.exe", "/setreimage /path " + @"C:\Windows\System32\Recovery", @"C:\Windows\System32"));
                     await Task.Run(() => PatcherHelper.RunAsyncCommands("reagentc.exe", "/enable", @"C:\Windows\System32"));
