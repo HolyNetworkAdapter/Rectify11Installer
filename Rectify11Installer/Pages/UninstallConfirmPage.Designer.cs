@@ -46,7 +46,7 @@
             this.chkExplorerPatcher.AutoSize = true;
             this.chkExplorerPatcher.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkExplorerPatcher.ForeColor = System.Drawing.Color.White;
-            this.chkExplorerPatcher.Location = new System.Drawing.Point(323, 64);
+            this.chkExplorerPatcher.Location = new System.Drawing.Point(321, 100);
             this.chkExplorerPatcher.Name = "chkExplorerPatcher";
             this.chkExplorerPatcher.Size = new System.Drawing.Size(172, 21);
             this.chkExplorerPatcher.TabIndex = 16;
@@ -60,7 +60,7 @@
             this.chkRemoveThemes.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkRemoveThemes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkRemoveThemes.ForeColor = System.Drawing.Color.White;
-            this.chkRemoveThemes.Location = new System.Drawing.Point(323, 123);
+            this.chkRemoveThemes.Location = new System.Drawing.Point(321, 159);
             this.chkRemoveThemes.Name = "chkRemoveThemes";
             this.chkRemoveThemes.Size = new System.Drawing.Size(120, 21);
             this.chkRemoveThemes.TabIndex = 0;
@@ -74,7 +74,7 @@
             this.chkRestoreWallpaper.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkRestoreWallpaper.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkRestoreWallpaper.ForeColor = System.Drawing.Color.White;
-            this.chkRestoreWallpaper.Location = new System.Drawing.Point(323, 94);
+            this.chkRestoreWallpaper.Location = new System.Drawing.Point(321, 130);
             this.chkRestoreWallpaper.Name = "chkRestoreWallpaper";
             this.chkRestoreWallpaper.Size = new System.Drawing.Size(189, 21);
             this.chkRestoreWallpaper.TabIndex = 17;
@@ -87,7 +87,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(307, 6);
+            this.label2.Location = new System.Drawing.Point(305, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(292, 45);
             this.label2.TabIndex = 24;
@@ -100,7 +100,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Rectify11Installer.Properties.Resources._20220805_171514;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 41);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 51);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(273, 274);
             this.pictureBox2.TabIndex = 22;
@@ -113,7 +113,7 @@
             this.darkAwareCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.darkAwareCheckBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.darkAwareCheckBox1.ForeColor = System.Drawing.Color.White;
-            this.darkAwareCheckBox1.Location = new System.Drawing.Point(323, 153);
+            this.darkAwareCheckBox1.Location = new System.Drawing.Point(321, 189);
             this.darkAwareCheckBox1.Name = "darkAwareCheckBox1";
             this.darkAwareCheckBox1.Size = new System.Drawing.Size(169, 21);
             this.darkAwareCheckBox1.TabIndex = 25;
@@ -127,7 +127,7 @@
             this.darkAwareCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.darkAwareCheckBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.darkAwareCheckBox2.ForeColor = System.Drawing.Color.White;
-            this.darkAwareCheckBox2.Location = new System.Drawing.Point(323, 182);
+            this.darkAwareCheckBox2.Location = new System.Drawing.Point(321, 218);
             this.darkAwareCheckBox2.Name = "darkAwareCheckBox2";
             this.darkAwareCheckBox2.Size = new System.Drawing.Size(178, 21);
             this.darkAwareCheckBox2.TabIndex = 26;
@@ -141,7 +141,7 @@
             this.darkAwareCheckBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.darkAwareCheckBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.darkAwareCheckBox3.ForeColor = System.Drawing.Color.White;
-            this.darkAwareCheckBox3.Location = new System.Drawing.Point(323, 212);
+            this.darkAwareCheckBox3.Location = new System.Drawing.Point(321, 248);
             this.darkAwareCheckBox3.Name = "darkAwareCheckBox3";
             this.darkAwareCheckBox3.Size = new System.Drawing.Size(113, 21);
             this.darkAwareCheckBox3.TabIndex = 27;
@@ -151,9 +151,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Rectify11Installer.Properties.Resources.border;
-            this.pictureBox1.Location = new System.Drawing.Point(297, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(295, 62);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(251, 289);
+            this.pictureBox1.Size = new System.Drawing.Size(251, 252);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
