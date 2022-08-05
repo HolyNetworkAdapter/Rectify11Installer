@@ -122,7 +122,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Rectify11Installer.Properties.Resources._10start;
+            this.pictureBox2.Image = global::Rectify11Installer.Properties.Resources.j;
             this.pictureBox2.Location = new System.Drawing.Point(312, 44);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(140, 89);
@@ -132,7 +132,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Rectify11Installer.Properties.Resources._11start;
+            this.pictureBox3.Image = global::Rectify11Installer.Properties.Resources.e;
             this.pictureBox3.Location = new System.Drawing.Point(475, 44);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(140, 89);

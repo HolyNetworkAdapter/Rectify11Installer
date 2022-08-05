@@ -1652,12 +1652,6 @@
 			<Command action="addskip" resource="MultiDigiMon.exe.res" mask="ICONGROUP, "></Command>
 		</Commands>
 	</Patch>
-	<Patch Package="microsoft-windows-uiribbon" HardlinkTarget="C:\Windows\System32\uiribbon.dll" DisableOnSafeMode="false" Arch="amd64">
-		<Commands>
-			<Command action="delete" mask="PNG,"></Command>
-			<Command action="addskip" resource="uiribbon_png.res" mask="PNG,"></Command>
-		</Commands>
-	</Patch>
 	<Patch Package="microsoft-windows-tabletpc-controlpanel" HardlinkTarget="C:\Windows\System32\tabcal.exe" DisableOnSafeMode="false" Arch="amd64">
 		<Commands>
 			<Command action="delete" mask="ICONGROUP, "></Command>
