@@ -52,7 +52,6 @@ namespace Rectify11Installer
             WelcomePage.InstallButton.Click += InstallButton_Click;
             WelcomePage.UninstallButton.Click += UninstallButton_Click;
             WelcomePage.UninstallButton.Enabled = InstallStatus.IsRectify11Installed;
-            WelcomePage.VersionLabel.Click += VersionLabel_Click;
             Navigate(WelcomePage);
 
             SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
@@ -820,6 +819,9 @@ namespace Rectify11Installer
                         f.Write("RemoveEP", options.RemoveExplorerPatcher.ToString());
                         f.Write("RemoveThemes", options.RemoveThemesAndThemeTool.ToString());
                         f.Write("RemoveWP", options.RestoreWallpapers.ToString());
+                        f.Write("RemoveASDF", options.deleteASDF.ToString());
+                        f.Write("RemoveMFE", options.deleteMFE.ToString());
+                        f.Write("RemoveWINVER", options.revertwinver.ToString());
                         f.Write("Mode", "Uninstall");
                     }
                     catch (Exception ex)
@@ -862,12 +864,15 @@ namespace Rectify11Installer
                             File.Delete(@"C:\Windows\Rectify11\restore.reg");
                         }
                     }
-                    var localap = Environment.GetEnvironmentVariable("localappdata");
-                    if (localap != null)
+                    if (options.deleteMFE)
                     {
-                        if (File.Exists(Path.Combine(localap, @"Mica For Everyone\MicaForEveryone.conf")))
+                        var localap = Environment.GetEnvironmentVariable("localappdata");
+                        if (localap != null)
                         {
-                            File.Delete(Path.Combine(localap, @"Mica For Everyone\MicaForEveryone.conf"));
+                            if (File.Exists(Path.Combine(localap, @"Mica For Everyone\MicaForEveryone.conf")))
+                            {
+                                File.Delete(Path.Combine(localap, @"Mica For Everyone\MicaForEveryone.conf"));
+                            }
                         }
                     }
                     if (options.RemoveThemesAndThemeTool)

@@ -35,8 +35,8 @@ namespace Rectify11Installer.Pages
             this.cmbInstallNOW = new Rectify11Installer.Controls.FakeCommandLink();
             this.cmbUninstall = new Rectify11Installer.Controls.FakeCommandLink();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblVersion = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@ namespace Rectify11Installer.Pages
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Rectify11Installer.Properties.Resources.rectify11Installer;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(68, 136);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(173, 184);
             this.pictureBox1.TabIndex = 11;
@@ -85,17 +85,6 @@ namespace Rectify11Installer.Pages
             this.label1.Text = "Welcome";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblVersion
-            // 
-            this.lblVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblVersion.AutoSize = true;
-            this.lblVersion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVersion.Location = new System.Drawing.Point(5, 452);
-            this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(49, 17);
-            this.lblVersion.TabIndex = 15;
-            this.lblVersion.Text = "v3.0-rp";
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -109,13 +98,26 @@ namespace Rectify11Installer.Pages
             this.label3.Text = resources.GetString("label3.Text");
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 451);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 24);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "R11-v3.0-RP";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // WelcomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbUninstall);
             this.Controls.Add(this.cmbInstallNOW);
-            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -126,7 +128,6 @@ namespace Rectify11Installer.Pages
             this.WizardTopText = "Welcome to Rectify11 Installer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -135,7 +136,7 @@ namespace Rectify11Installer.Pages
         private FakeCommandLink cmbInstallNOW;
         private FakeCommandLink cmbUninstall;
         private Label label1;
-        private Label lblVersion;
         private Label label3;
+        private Label label2;
     }
 }

@@ -31,21 +31,24 @@
             this.chkExplorerPatcher = new Rectify11Installer.Controls.DarkAwareCheckBox();
             this.chkRemoveThemes = new Rectify11Installer.Controls.DarkAwareCheckBox();
             this.chkRestoreWallpaper = new Rectify11Installer.Controls.DarkAwareCheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.darkAwareFlowLayoutPanel1 = new Rectify11Installer.Controls.DarkAwareFlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.darkAwareFlowLayoutPanel1.SuspendLayout();
+            this.darkAwareCheckBox1 = new Rectify11Installer.Controls.DarkAwareCheckBox();
+            this.darkAwareCheckBox2 = new Rectify11Installer.Controls.DarkAwareCheckBox();
+            this.darkAwareCheckBox3 = new Rectify11Installer.Controls.DarkAwareCheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // chkExplorerPatcher
             // 
             this.chkExplorerPatcher.AutoSize = true;
+            this.chkExplorerPatcher.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkExplorerPatcher.ForeColor = System.Drawing.Color.White;
-            this.chkExplorerPatcher.Location = new System.Drawing.Point(3, 3);
+            this.chkExplorerPatcher.Location = new System.Drawing.Point(323, 64);
             this.chkExplorerPatcher.Name = "chkExplorerPatcher";
-            this.chkExplorerPatcher.Size = new System.Drawing.Size(157, 19);
+            this.chkExplorerPatcher.Size = new System.Drawing.Size(172, 21);
             this.chkExplorerPatcher.TabIndex = 16;
             this.chkExplorerPatcher.Text = "Uninstall ExplorerPatcher";
             this.chkExplorerPatcher.UseVisualStyleBackColor = true;
@@ -55,10 +58,11 @@
             this.chkRemoveThemes.AutoSize = true;
             this.chkRemoveThemes.Checked = true;
             this.chkRemoveThemes.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRemoveThemes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkRemoveThemes.ForeColor = System.Drawing.Color.White;
-            this.chkRemoveThemes.Location = new System.Drawing.Point(3, 53);
+            this.chkRemoveThemes.Location = new System.Drawing.Point(323, 123);
             this.chkRemoveThemes.Name = "chkRemoveThemes";
-            this.chkRemoveThemes.Size = new System.Drawing.Size(111, 19);
+            this.chkRemoveThemes.Size = new System.Drawing.Size(120, 21);
             this.chkRemoveThemes.TabIndex = 0;
             this.chkRemoveThemes.Text = "Remove themes";
             this.chkRemoveThemes.UseVisualStyleBackColor = true;
@@ -68,79 +72,112 @@
             this.chkRestoreWallpaper.AutoSize = true;
             this.chkRestoreWallpaper.Checked = true;
             this.chkRestoreWallpaper.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRestoreWallpaper.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkRestoreWallpaper.ForeColor = System.Drawing.Color.White;
-            this.chkRestoreWallpaper.Location = new System.Drawing.Point(3, 28);
+            this.chkRestoreWallpaper.Location = new System.Drawing.Point(323, 94);
             this.chkRestoreWallpaper.Name = "chkRestoreWallpaper";
-            this.chkRestoreWallpaper.Size = new System.Drawing.Size(171, 19);
+            this.chkRestoreWallpaper.Size = new System.Drawing.Size(189, 21);
             this.chkRestoreWallpaper.TabIndex = 17;
             this.chkRestoreWallpaper.Text = "Delete Rectify11 Wallpapers";
             this.chkRestoreWallpaper.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-2, 150);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(642, 23);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Choose what to remove";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 173);
+            this.label2.Location = new System.Drawing.Point(306, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(640, 45);
+            this.label2.Size = new System.Drawing.Size(292, 45);
             this.label2.TabIndex = 24;
             this.label2.Text = "Choose what other features/programs will be removed. Icons are always restored ba" +
     "ck.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // darkAwareFlowLayoutPanel1
-            // 
-            this.darkAwareFlowLayoutPanel1.AutoScroll = true;
-            this.darkAwareFlowLayoutPanel1.Controls.Add(this.chkExplorerPatcher);
-            this.darkAwareFlowLayoutPanel1.Controls.Add(this.chkRestoreWallpaper);
-            this.darkAwareFlowLayoutPanel1.Controls.Add(this.chkRemoveThemes);
-            this.darkAwareFlowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.darkAwareFlowLayoutPanel1.Location = new System.Drawing.Point(148, 221);
-            this.darkAwareFlowLayoutPanel1.Name = "darkAwareFlowLayoutPanel1";
-            this.darkAwareFlowLayoutPanel1.Size = new System.Drawing.Size(340, 181);
-            this.darkAwareFlowLayoutPanel1.TabIndex = 23;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::Rectify11Installer.Properties.Resources.rectify11Installer;
+            this.pictureBox2.BackgroundImage = global::Rectify11Installer.Properties.Resources.uninst;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, -3);
+            this.pictureBox2.Location = new System.Drawing.Point(37, 67);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(642, 150);
+            this.pictureBox2.Size = new System.Drawing.Size(227, 237);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
+            // 
+            // darkAwareCheckBox1
+            // 
+            this.darkAwareCheckBox1.AutoSize = true;
+            this.darkAwareCheckBox1.Checked = true;
+            this.darkAwareCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.darkAwareCheckBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.darkAwareCheckBox1.ForeColor = System.Drawing.Color.White;
+            this.darkAwareCheckBox1.Location = new System.Drawing.Point(323, 153);
+            this.darkAwareCheckBox1.Name = "darkAwareCheckBox1";
+            this.darkAwareCheckBox1.Size = new System.Drawing.Size(169, 21);
+            this.darkAwareCheckBox1.TabIndex = 25;
+            this.darkAwareCheckBox1.Text = "Remove AccentColorizer";
+            this.darkAwareCheckBox1.UseVisualStyleBackColor = true;
+            // 
+            // darkAwareCheckBox2
+            // 
+            this.darkAwareCheckBox2.AutoSize = true;
+            this.darkAwareCheckBox2.Checked = true;
+            this.darkAwareCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.darkAwareCheckBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.darkAwareCheckBox2.ForeColor = System.Drawing.Color.White;
+            this.darkAwareCheckBox2.Location = new System.Drawing.Point(323, 182);
+            this.darkAwareCheckBox2.Name = "darkAwareCheckBox2";
+            this.darkAwareCheckBox2.Size = new System.Drawing.Size(178, 21);
+            this.darkAwareCheckBox2.TabIndex = 26;
+            this.darkAwareCheckBox2.Text = "Remove MicaForEveryone";
+            this.darkAwareCheckBox2.UseVisualStyleBackColor = true;
+            // 
+            // darkAwareCheckBox3
+            // 
+            this.darkAwareCheckBox3.AutoSize = true;
+            this.darkAwareCheckBox3.Checked = true;
+            this.darkAwareCheckBox3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.darkAwareCheckBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.darkAwareCheckBox3.ForeColor = System.Drawing.Color.White;
+            this.darkAwareCheckBox3.Location = new System.Drawing.Point(323, 212);
+            this.darkAwareCheckBox3.Name = "darkAwareCheckBox3";
+            this.darkAwareCheckBox3.Size = new System.Drawing.Size(113, 21);
+            this.darkAwareCheckBox3.TabIndex = 27;
+            this.darkAwareCheckBox3.Text = "Restore winver";
+            this.darkAwareCheckBox3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Rectify11Installer.Properties.Resources.border;
+            this.pictureBox1.Location = new System.Drawing.Point(297, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(251, 289);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UninstallConfirmPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.darkAwareCheckBox3);
+            this.Controls.Add(this.darkAwareCheckBox2);
+            this.Controls.Add(this.darkAwareCheckBox1);
+            this.Controls.Add(this.chkExplorerPatcher);
+            this.Controls.Add(this.chkRestoreWallpaper);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.darkAwareFlowLayoutPanel1);
+            this.Controls.Add(this.chkRemoveThemes);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "UninstallConfirmPage";
-            this.WizardShowTitle = false;
             this.WizardTopText = "Choose what to uninstall";
-            this.darkAwareFlowLayoutPanel1.ResumeLayout(false);
-            this.darkAwareFlowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -148,9 +185,11 @@
         private Controls.DarkAwareCheckBox chkExplorerPatcher;
         private Controls.DarkAwareCheckBox chkRemoveThemes;
         private Controls.DarkAwareCheckBox chkRestoreWallpaper;
-        private Label label1;
         private Label label2;
-        private Controls.DarkAwareFlowLayoutPanel darkAwareFlowLayoutPanel1;
         private PictureBox pictureBox2;
+        private Controls.DarkAwareCheckBox darkAwareCheckBox1;
+        private Controls.DarkAwareCheckBox darkAwareCheckBox2;
+        private Controls.DarkAwareCheckBox darkAwareCheckBox3;
+        private PictureBox pictureBox1;
     }
 }

@@ -323,25 +323,35 @@ namespace Rectify11Installer
                         Directory.Delete(@"C:\Windows\Web\Wallpaper\Rectify11", true);
                     }
                 }
-                if (File.Exists(@"C:\Windows\System32\winver.exe"))
+
+                if (options.revertwinver)
                 {
-                    PatcherHelper.TakeOwnership(@"C:\Windows\System32\winver.exe", false);
-                    PatcherHelper.GrantFullControl(@"C:\Windows\System32\winver.exe", "Everyone", false);
-                    File.Delete(@"C:\Windows\System32\winver.exe");
-                }
-                if (File.Exists(@"C:\Windows\Rectify11\winver.bak.exe"))
-                {
-                    File.Copy(@"C:\Windows\Rectify11\winver.bak.exe", @"C:\Windows\System32\winver.exe", true);
+                    if (File.Exists(@"C:\Windows\System32\winver.exe"))
+                    {
+                        PatcherHelper.TakeOwnership(@"C:\Windows\System32\winver.exe", false);
+                        PatcherHelper.GrantFullControl(@"C:\Windows\System32\winver.exe", "Everyone", false);
+                        File.Delete(@"C:\Windows\System32\winver.exe");
+                    }
+                    if (File.Exists(@"C:\Windows\Rectify11\winver.bak.exe"))
+                    {
+                        File.Copy(@"C:\Windows\Rectify11\winver.bak.exe", @"C:\Windows\System32\winver.exe", true);
+                    }
                 }
 
-                if (Directory.Exists(@"C:\Windows\MicaForEveryone"))
+                if (options.deleteMFE)
                 {
-                    Directory.Delete(@"C:\Windows\MicaForEveryone", true);
+                    if (Directory.Exists(@"C:\Windows\MicaForEveryone"))
+                    {
+                        Directory.Delete(@"C:\Windows\MicaForEveryone", true);
+                    }
                 }
 
-                if (File.Exists(@"C:\Windows\AccentColorizer.exe"))
+                if (options.deleteASDF)
                 {
-                    File.Delete(@"C:\Windows\AccentColorizer.exe");
+                    if (File.Exists(@"C:\Windows\AccentColorizer.exe"))
+                    {
+                        File.Delete(@"C:\Windows\AccentColorizer.exe");
+                    }
                 }
 
                 if (File.Exists(@"C:\Windows\Rectify11\unrbicons.reg"))
