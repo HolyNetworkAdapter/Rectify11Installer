@@ -85,14 +85,13 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(305, 6);
+            this.label2.Location = new System.Drawing.Point(328, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(292, 45);
+            this.label2.Size = new System.Drawing.Size(190, 24);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Choose what other features/programs will be removed. Icons are always restored ba" +
-    "ck.";
+            this.label2.Text = "Select the features to remove";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox2
@@ -173,7 +172,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UninstallConfirmPage";
-            this.WizardTopText = "Choose what to uninstall";
+            this.WizardTopText = "Uninstall Rectify11";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

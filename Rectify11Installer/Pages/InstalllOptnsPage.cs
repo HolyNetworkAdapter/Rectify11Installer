@@ -11,5 +11,10 @@
         {
             InitializeComponent();
         }
+
+        private void InstalllOptnsPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

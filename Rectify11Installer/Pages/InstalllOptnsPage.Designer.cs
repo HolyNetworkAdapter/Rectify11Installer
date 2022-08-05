@@ -170,14 +170,14 @@ namespace Rectify11Installer.Pages
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(303, 7);
+            this.label2.Location = new System.Drawing.Point(340, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(292, 29);
+            this.label2.Size = new System.Drawing.Size(244, 20);
             this.label2.TabIndex = 15;
             this.label2.Text = "You can choose what will be Rectified.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 
@@ -194,7 +194,7 @@ namespace Rectify11Installer.Pages
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Rectify11Installer.Properties.Resources.uninst;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(32, 72);
+            this.pictureBox3.Location = new System.Drawing.Point(38, 72);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(220, 223);
             this.pictureBox3.TabIndex = 23;
@@ -215,6 +215,7 @@ namespace Rectify11Installer.Pages
             this.Name = "InstalllOptnsPage";
             this.Size = new System.Drawing.Size(640, 436);
             this.WizardTopText = "Choose what to install";
+            this.Load += new System.EventHandler(this.InstalllOptnsPage_Load);
             this.pnlContent.ResumeLayout(false);
             this.pnlContent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
