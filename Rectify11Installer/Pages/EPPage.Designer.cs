@@ -59,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(342, 12);
+            this.label1.Location = new System.Drawing.Point(342, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 17);
             this.label1.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.chkW11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkW11.ForeColor = System.Drawing.Color.White;
             this.chkW11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.chkW11.Location = new System.Drawing.Point(475, 140);
+            this.chkW11.Location = new System.Drawing.Point(475, 132);
             this.chkW11.Name = "chkW11";
             this.chkW11.Size = new System.Drawing.Size(142, 21);
             this.chkW11.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.chkW10.Checked = true;
             this.chkW10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkW10.ForeColor = System.Drawing.Color.White;
-            this.chkW10.Location = new System.Drawing.Point(310, 140);
+            this.chkW10.Location = new System.Drawing.Point(310, 132);
             this.chkW10.Name = "chkW10";
             this.chkW10.Size = new System.Drawing.Size(154, 21);
             this.chkW10.TabIndex = 3;
@@ -123,7 +123,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Rectify11Installer.Properties.Resources.j;
-            this.pictureBox2.Location = new System.Drawing.Point(312, 44);
+            this.pictureBox2.Location = new System.Drawing.Point(312, 36);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(140, 89);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +133,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Rectify11Installer.Properties.Resources.e;
-            this.pictureBox3.Location = new System.Drawing.Point(475, 44);
+            this.pictureBox3.Location = new System.Drawing.Point(475, 36);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(140, 89);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +160,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(306, 164);
+            this.label2.Location = new System.Drawing.Point(306, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(204, 52);
             this.label2.TabIndex = 19;

@@ -60,7 +60,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(384, 8);
+            this.label1.Location = new System.Drawing.Point(384, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 23);
             this.label1.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.darkAwareRadioButton1);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Location = new System.Drawing.Point(310, 40);
+            this.panel1.Location = new System.Drawing.Point(310, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(302, 231);
             this.panel1.TabIndex = 2;
