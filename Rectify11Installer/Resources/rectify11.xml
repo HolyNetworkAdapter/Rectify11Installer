@@ -651,6 +651,10 @@
 		<Commands>
 			<Command action="delete" mask="ICONGROUP,"></Command>
 			<Command action="addskip" resource="Taskmgr_icons.res" mask="ICONGROUP,"></Command>
+			<Command action="delete" mask="BITMAP,"></Command>
+			<Command action="addskip" resource="Taskmgr_BMP.res" mask="BITMAP,"></Command>
+			<Command action="delete" mask="PNG,"></Command>
+			<Command action="addskip" resource="Taskmgr_PNG.res" mask="PNG,"></Command>
 		</Commands>
 	</Patch>-->
 
