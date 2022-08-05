@@ -87,7 +87,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(366, 61);
+            this.label2.Location = new System.Drawing.Point(366, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 24);
             this.label2.TabIndex = 24;
